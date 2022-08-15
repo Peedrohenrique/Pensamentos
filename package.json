@@ -4,12 +4,35 @@
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.6",
     "cookie-session": "^2.0.0",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-flash": "^0.0.2",
+    "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.19",
     "sequelize": "^6.21.3",
     "session-file-store": "^1.5.0"
-  }
+  },
+  "name": "pensamentos",
+  "description": "Projeto criado para aprender e colocar em prática EXPPRESS/SEQUELIZE/MVC",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "sequelize-cli": "^6.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peedrohenrique/Pensamentos.git"
+  },
+  "author": "Pedro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peedrohenrique/Pensamentos/issues"
+  },
+  "homepage": "https://github.com/Peedrohenrique/Pensamentos#readme"
 }
