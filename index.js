@@ -13,6 +13,12 @@ const conn = require("./db/conn");
 const Tought = require("./models/Tought");
 const User = require("./models/User");
 
+// Import Routes
+const ToughtsRoutes = require("./routes/toughtsRoutes");
+
+// Import Controller
+const ToughController = require("./controllers/ToughtController");
+
 // Template engine
 const hbs = exphbs.create({ defaultLayout: "main" });
 
@@ -61,6 +67,10 @@ app.use((req, res, next) => {
   }
   next();
 });
+
+// Routes
+app.use("/toughts", ToughtsRoutes);
+app.get("/", ToughController.showToughts);
 
 conn
   //.sync({ force: true})
